@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sureshkumar Vanaparthi — B.Tech graduate, web developer, cybersecurity & robotics portfolio.">
+  <title>Sureshkumar Vanaparthi | Personal Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+  <main>
+    <!-- Sidebar -->
+    <aside class="sidebar" data-sidebar>
+      <div class="sidebar-info">
+        <figure class="avatar-box">
+          <img src="images/profile.jpg" alt="Sureshkumar Vanaparthi" id="profile-img" width="80">
+          <span class="avatar-fallback" id="avatar-fallback">SV</span>
+        </figure>
+        <canvas id="cube-canvas" class="sidebar-cube" aria-hidden="true"></canvas>
+        <div class="info-content">
+          <h1 class="name" title="Sureshkumar Vanaparthi">Sureshkumar Vanaparthi</h1>
+          <p class="title">Web developer</p>
+        </div>
+        <button class="info_more-btn" data-sidebar-btn type="button">
+          <span>Show Contacts</span>
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+      </div>
+
+      <div class="sidebar-info_more">
+        <div class="separator"></div>
+        <ul class="contacts-list">
+          <li class="contact-item">
+            <div class="icon-box"><ion-icon name="mail-outline"></ion-icon></div>
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <a href="mailto:vsurya7654@gmail.com" class="contact-link">vsurya7654@gmail.com</a>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box"><ion-icon name="phone-portrait-outline"></ion-icon></div>
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+              <a href="tel:+919951762507" class="contact-link">+91 99517 62507</a>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box"><ion-icon name="school-outline"></ion-icon></div>
+            <div class="contact-info">
+              <p class="contact-title">Education</p>
+              <time>B.Tech — JNTUK (78%)</time>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box"><ion-icon name="location-outline"></ion-icon></div>
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+              <address>Andhra Pradesh, India</address>
+            </div>
+          </li>
+        </ul>
+        <div class="separator"></div>
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="mailto:vsurya7654@gmail.com" class="social-link" aria-label="Email"><ion-icon name="mail"></ion-icon></a>
+          </li>
+          <li class="social-item">
+            <a href="tel:+919951762507" class="social-link" aria-label="Phone"><ion-icon name="call"></ion-icon></a>
+          </li>
+          <li class="social-item">
+            <a href="#" class="social-link" data-nav-link data-page="contact" aria-label="Contact"><ion-icon name="chatbubble"></ion-icon></a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <div class="main-content">
+      <!-- Navbar -->
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item"><button class="navbar-link active" data-nav-link data-page="about">About</button></li>
+          <li class="navbar-item"><button class="navbar-link" data-nav-link data-page="resume">Resume</button></li>
+          <li class="navbar-item"><button class="navbar-link" data-nav-link data-page="skills">Skills</button></li>
+          <li class="navbar-item"><button class="navbar-link" data-nav-link data-page="portfolio">Portfolio</button></li>
+          <li class="navbar-item"><button class="navbar-link" data-nav-link data-page="certificates">Certificates</button></li>
+          <li class="navbar-item"><button class="navbar-link" data-nav-link data-page="contact">Contact</button></li>
+        </ul>
+      </nav>
+
+      <!-- About -->
+      <article class="about active" data-page="about">
+        <header><h2 class="h2 article-title">About me</h2></header>
+
+        <section class="intro-hero">
+          <div class="intro-copy">
+            <h3 class="intro-heading">Web Development</h3>
+            <p class="intro-sub">&amp; Creative Engineering</p>
+            <p class="intro-typed">for <span id="typed-text"></span><span class="typed-cursor" aria-hidden="true">|</span></p>
+            <p class="intro-desc">
+              Let's build clean, functional websites and hands-on projects — tailored to your vision.
+              From responsive web apps to robotics prototypes, I combine code with creativity.
+            </p>
+          </div>
+          <figure class="intro-photo card-3d" data-tilt>
+            <img src="images/profile.jpg" alt="Sureshkumar Vanaparthi" data-fallback="about">
+            <span class="intro-photo-fallback" id="intro-photo-fallback">SV</span>
+          </figure>
+        </section>
+
+        <section class="about-text">
+          <p>
+            I'm Sureshkumar Vanaparthi, a B.Tech graduate from JNTUK, working in web development,
+            SharePoint design, and Python. I enjoy turning complex problems into simple, clean,
+            and intuitive digital solutions.
+          </p>
+          <p>
+            My goal is to build websites that are functional and user-friendly while remaining
+            attractive. I add a personal touch to every project and aim to communicate your
+            message clearly. Beyond software, I explore robotics, DIY builds, 3D printing, and
+            cybersecurity fundamentals.
+          </p>
+        </section>
+
+        <section class="service">
+          <h3 class="h3 service-title">What I'm doing</h3>
+          <ul class="service-list">
+            <li class="service-item card-3d" data-tilt>
+              <div class="service-icon-box"><ion-icon name="color-palette-outline"></ion-icon></div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web design</h4>
+                <p class="service-item-text">Modern, clean UI layouts with responsive design at a professional level.</p>
+              </div>
+            </li>
+            <li class="service-item card-3d" data-tilt>
+              <div class="service-icon-box"><ion-icon name="code-slash-outline"></ion-icon></div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web development</h4>
+                <p class="service-item-text">High-quality sites using HTML, CSS, Bootstrap &amp; JavaScript.</p>
+              </div>
+            </li>
+            <li class="service-item card-3d" data-tilt>
+              <div class="service-icon-box"><ion-icon name="shield-checkmark-outline"></ion-icon></div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Cybersecurity</h4>
+                <p class="service-item-text">Secure coding practices, network basics &amp; OWASP awareness.</p>
+              </div>
+            </li>
+            <li class="service-item card-3d" data-tilt>
+              <div class="service-icon-box"><ion-icon name="hardware-chip-outline"></ion-icon></div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Robotics &amp; DIY</h4>
+                <p class="service-item-text">DIY cars, custom robots, sensors &amp; 3D printing prototypes.</p>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <section class="testimonials">
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+          <div class="carousel-wrap" id="testimonials-carousel">
+            <button class="carousel-arrow prev" data-carousel-prev type="button" aria-label="Previous">‹</button>
+            <div class="carousel-stage">
+              <div class="carousel-track" id="testimonials-track"></div>
+            </div>
+            <button class="carousel-arrow next" data-carousel-next type="button" aria-label="Next">›</button>
+            <div class="carousel-dots" id="testimonials-dots"></div>
+          </div>
+        </section>
+
+      </article>
+
+      <!-- Skills & Tools -->
+      <article class="skills-page" data-page="skills">
+        <header>
+          <h2 class="h2 article-title">Skills &amp; Tools</h2>
+          <p class="skills-subtitle">For those who know what they're looking for..</p>
+        </header>
+
+        <div class="skills-toggle" role="tablist" aria-label="Skill category">
+          <button type="button" class="skills-toggle-btn active" data-skills-tab="tech" role="tab" aria-selected="true">Tech</button>
+          <button type="button" class="skills-toggle-btn" data-skills-tab="design" role="tab" aria-selected="false">Design</button>
+        </div>
+
+        <ul class="skills-grid" id="skills-grid" data-skills-panel="tech"></ul>
+        <ul class="skills-grid is-hidden" id="skills-grid-design" data-skills-panel="design"></ul>
+
+        <section class="skills-context">
+          <h3 class="h3">Used in experience &amp; internship</h3>
+          <p>
+            Skills below come from web development work, SharePoint projects, Python scripting,
+            cybersecurity learning, and robotics internship builds (DIY cars, sensors, 3D printing).
+          </p>
+        </section>
+      </article>
+
+      <!-- Resume -->
+      <article class="resume" data-page="resume">
+        <header><h2 class="h2 article-title">Resume</h2></header>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box"><ion-icon name="book-outline"></ion-icon></div>
+            <h3 class="h3">Education</h3>
+          </div>
+          <ol class="timeline-list">
+            <li class="timeline-item card-3d" data-tilt>
+              <h4 class="h4 timeline-item-title">Bachelor of Technology — JNTUK</h4>
+              <span>B.Tech · 78%</span>
+              <p class="timeline-text">Completed B.Tech focused on engineering fundamentals and applied technology.</p>
+            </li>
+            <li class="timeline-item card-3d" data-tilt>
+              <h4 class="h4 timeline-item-title">Sri Chaitanya Jr College</h4>
+              <span>Intermediate · 88%</span>
+              <p class="timeline-text">Scored 88% in intermediate (12th) education.</p>
+            </li>
+            <li class="timeline-item card-3d" data-tilt>
+              <h4 class="h4 timeline-item-title">Sri Prakash</h4>
+              <span>10th · 9.7 GPA</span>
+              <p class="timeline-text">Achieved 9.7 GPA in secondary school (10th standard).</p>
+            </li>
+          </ol>
+        </section>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box"><ion-icon name="briefcase-outline"></ion-icon></div>
+            <h3 class="h3">Experience</h3>
+          </div>
+          <ol class="timeline-list">
+            <li class="timeline-item card-3d" data-tilt>
+              <h4 class="h4 timeline-item-title">Web Developer</h4>
+              <span>Present</span>
+              <p class="timeline-text">Building responsive websites with HTML, CSS, Bootstrap, and JavaScript.</p>
+            </li>
+            <li class="timeline-item card-3d" data-tilt>
+              <h4 class="h4 timeline-item-title">Cybersecurity Learner</h4>
+              <span>Ongoing</span>
+              <p class="timeline-text">Studying secure coding, network security basics, and OWASP awareness.</p>
+            </li>
+            <li class="timeline-item card-3d" data-tilt>
+              <h4 class="h4 timeline-item-title">SharePoint Design</h4>
+              <span>Internship / Projects</span>
+              <p class="timeline-text">SharePoint installation, site design, and collaboration workflows.</p>
+            </li>
+            <li class="timeline-item card-3d" data-tilt>
+              <h4 class="h4 timeline-item-title">Robotics Intern</h4>
+              <span>Internship</span>
+              <p class="timeline-text">Robotics assembly, DIY cars &amp; robots, motor control, and 3D printing.</p>
+            </li>
+          </ol>
+        </section>
+
+        <section class="skill">
+          <h3 class="h3 skills-title">My skills</h3>
+          <ul class="skills-list content-card">
+            <li class="skills-item">
+              <div class="title-wrapper"><h5 class="h5">Web development</h5><data value="90">90%</data></div>
+              <div class="skill-progress-bg"><div class="skill-progress-fill" style="width:90%"></div></div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper"><h5 class="h5">SharePoint</h5><data value="80">80%</data></div>
+              <div class="skill-progress-bg"><div class="skill-progress-fill" style="width:80%"></div></div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper"><h5 class="h5">Python</h5><data value="75">75%</data></div>
+              <div class="skill-progress-bg"><div class="skill-progress-fill" style="width:75%"></div></div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper"><h5 class="h5">Robotics &amp; DIY</h5><data value="85">85%</data></div>
+              <div class="skill-progress-bg"><div class="skill-progress-fill" style="width:85%"></div></div>
+            </li>
+          </ul>
+        </section>
+      </article>
+
+      <!-- Portfolio -->
+      <article class="portfolio" data-page="portfolio">
+        <header><h2 class="h2 article-title">Portfolio</h2></header>
+
+        <section class="projects">
+          <ul class="filter-list">
+            <li class="filter-item"><button class="active" data-filter-btn data-filter="all">All</button></li>
+            <li class="filter-item"><button data-filter-btn data-filter="web development">Web development</button></li>
+            <li class="filter-item"><button data-filter-btn data-filter="sharepoint">SharePoint</button></li>
+            <li class="filter-item"><button data-filter-btn data-filter="robotics">Robotics</button></li>
+          </ul>
+
+          <div class="filter-select-box">
+            <button class="filter-select" data-select type="button">
+              <div class="select-value" data-select-value>Select category</div>
+              <div class="select-icon"><ion-icon name="chevron-down"></ion-icon></div>
+            </button>
+            <ul class="select-list">
+              <li class="select-item"><button data-select-item data-filter="all">All</button></li>
+              <li class="select-item"><button data-select-item data-filter="web development">Web development</button></li>
+              <li class="select-item"><button data-select-item data-filter="sharepoint">SharePoint</button></li>
+              <li class="select-item"><button data-select-item data-filter="robotics">Robotics</button></li>
+            </ul>
+          </div>
+
+          <ul class="project-list">
+            <li class="project-item active card-3d" data-tilt data-filter-item data-category="web development">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="images/project1.jpg" alt="Portfolio Website" loading="lazy" data-fallback="project">
+                </figure>
+                <h3 class="project-title">Portfolio Website</h3>
+                <p class="project-category">Web development</p>
+              </a>
+            </li>
+            <li class="project-item active card-3d" data-tilt data-filter-item data-category="sharepoint">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="images/experience.jpg" alt="SharePoint Intranet" loading="lazy" data-fallback="experience">
+                </figure>
+                <h3 class="project-title">SharePoint Intranet</h3>
+                <p class="project-category">SharePoint</p>
+              </a>
+            </li>
+            <li class="project-item active card-3d" data-tilt data-filter-item data-category="robotics">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="images/internship.jpg" alt="DIY Robot Build" loading="lazy" data-fallback="internship">
+                </figure>
+                <h3 class="project-title">DIY Robot Build</h3>
+                <p class="project-category">Robotics</p>
+              </a>
+            </li>
+            <li class="project-item active card-3d" data-tilt data-filter-item data-category="web development">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="images/about.jpg" alt="Responsive Landing Page" loading="lazy" data-fallback="about">
+                </figure>
+                <h3 class="project-title">Responsive Landing</h3>
+                <p class="project-category">Web development</p>
+              </a>
+            </li>
+            <li class="project-item active card-3d" data-tilt data-filter-item data-category="robotics">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="images/project2.jpg" alt="3D Printed Prototype" loading="lazy" data-fallback="project">
+                </figure>
+                <h3 class="project-title">3D Printed Prototype</h3>
+                <p class="project-category">Robotics</p>
+              </a>
+            </li>
+            <li class="project-item active card-3d" data-tilt data-filter-item data-category="web development">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="images/project1.jpg" alt="Python Automation" loading="lazy" data-fallback="project">
+                </figure>
+                <h3 class="project-title">Python Automation</h3>
+                <p class="project-category">Web development</p>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </article>
+
+      <!-- Certificates (Blog-style) -->
+      <article class="blog certificates" data-page="certificates">
+        <header><h2 class="h2 article-title">Certificates</h2></header>
+        <section class="blog-posts">
+          <ul class="blog-posts-list">
+            <li class="blog-post-item card-3d" data-tilt>
+              <a href="#">
+                <figure class="blog-banner-box">
+                  <img src="images/certificates.jpg" alt="Web Development Certificate" loading="lazy" data-fallback="certificates">
+                </figure>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Web</p>
+                    <span class="dot"></span>
+                    <time datetime="2024">2024</time>
+                  </div>
+                  <h3 class="h3 blog-item-title">Web Development</h3>
+                  <p class="blog-text">HTML, CSS, Bootstrap &amp; JavaScript — modern frontend fundamentals.</p>
+                </div>
+              </a>
+            </li>
+            <li class="blog-post-item card-3d" data-tilt>
+              <a href="#">
+                <figure class="blog-banner-box">
+                  <img src="images/certificates.jpg" alt="Python Certificate" loading="lazy" data-fallback="certificates">
+                </figure>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Programming</p>
+                    <span class="dot"></span>
+                    <time datetime="2024">2024</time>
+                  </div>
+                  <h3 class="h3 blog-item-title">Python Programming</h3>
+                  <p class="blog-text">Python scripting, automation &amp; problem-solving fundamentals.</p>
+                </div>
+              </a>
+            </li>
+            <li class="blog-post-item card-3d" data-tilt>
+              <a href="#">
+                <figure class="blog-banner-box">
+                  <img src="images/internship.jpg" alt="Robotics Certificate" loading="lazy" data-fallback="internship">
+                </figure>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Internship</p>
+                    <span class="dot"></span>
+                    <time datetime="2024">2024</time>
+                  </div>
+                  <h3 class="h3 blog-item-title">Robotics Internship</h3>
+                  <p class="blog-text">Hands-on robotics assembly, programming &amp; troubleshooting.</p>
+                </div>
+              </a>
+            </li>
+            <li class="blog-post-item card-3d" data-tilt>
+              <a href="#">
+                <figure class="blog-banner-box">
+                  <img src="images/experience.jpg" alt="Cybersecurity Certificate" loading="lazy" data-fallback="experience">
+                </figure>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Security</p>
+                    <span class="dot"></span>
+                    <time datetime="2025">2025</time>
+                  </div>
+                  <h3 class="h3 blog-item-title">Cybersecurity Basics</h3>
+                  <p class="blog-text">Network security, secure coding &amp; OWASP awareness.</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </article>
+
+      <!-- Contact -->
+      <article class="contact" data-page="contact">
+        <header><h2 class="h2 article-title">Contact</h2></header>
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://maps.google.com/maps?q=Andhra%20Pradesh%20India&t=&z=6&ie=UTF8&iwloc=&output=embed"
+              width="400" height="300" loading="lazy" title="Location"></iframe>
+          </figure>
+        </section>
+        <section class="contact-form">
+          <h3 class="h3 form-title">Contact Form</h3>
+          <form action="#" class="form" data-form id="contact-form">
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+            <button class="form-btn" type="submit" data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+          </form>
+          <p class="form-note" id="form-note" hidden>Thanks! Your message has been recorded locally.</p>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <script type="importmap">
+  { "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js" } }
+  </script>
+  <script type="module" src="scene.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
